@@ -1,0 +1,62 @@
+name: Report an issue in Node.js
+description: My request is not intercepted/mocked in Node.js
+labels: [bug]
+body:
+  - type: markdown
+    attributes: 
+      value: Thank you for deciding to contribute to Mock Service Worker! Please fill in the template below to help the library maintainers to help you resolve this issue.
+
+  - type: checkboxes
+    attributes:
+      label: A few extra things
+      options:
+        - label: I'm using the [latest version](https://www.npmjs.com/package/msw) of the library (verify by `npm ls msw`)
+          required: true
+        - label: I've checked the [open issues](/issues) and confirm this isn't a duplicate
+        - label: I've checked the [open issues](https://github.com/mswjs/interceptors/issues) in the "interceptors" library and confirm this isn't a duplicate
+          required: true
+        - label: I'm willing to open a pull request to solve this
+          required: false
+
+  - type: input
+    attributes:
+      label: Reproduction repository
+      description: Provide a GitHub repository URL where the issue can be reproduced. You can fork one of the [usage examples](https://github.com/mswjs/examples) to create a reproduction repository. Note that an issue without a reproduction repository will be **automatically closed**. Thank you for respecting maintainers' time.
+      placeholder: i.e. https://github.com/john.maverick/msw-issue
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Reproduction steps
+      description: Describe the steps to follow in the reproduction repository above to reproduce the issue.
+    validations:
+      required: true
+      
+  - type: input
+    attributes:
+      label: Node.js version
+      description: Provide the version of Node.js you're using (verify by `node -v`).
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Current behavior
+      description: Describe the behavior you're experiencing. Be as descriptive as possible (attach exact requests, error messages, logs, etc.).
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: Describe what you think should happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Investigation results
+      description: (Optional) Provide the results of any prior investigation of the issue (if any). Be as descriptive as possible, don't be afraid to assume.
+    validations:
+      required: false
